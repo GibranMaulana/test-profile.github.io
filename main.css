@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+   font-family: Rubik;
+   background: linear-gradient(
+      135deg,           
+      #000000,          
+      #2E0854,          
+      #000033,          
+      #1C1C1C           
+  );
+   margin: 0px;
+   padding: 0px; 
+}
+main h1{
+   color: white;
+}
+
+header {
+   display: flex;
+   flex-direction: row;
+   z-index: 100;
+   width: 100%;
+   align-items: center;
+   justify-content: space-between;
+   background-color:#0F0529;
+   position: fixed;
+}
+
+.header-leftSide {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+
+}
+
+.header-menu {
+   height: 48px;
+   padding-inline: 8px;   
+   cursor: pointer;
+}
+
+.header-logo {
+   height: 48px;
+   padding-inline: 8px;
+   padding-block: 8px;
+}
+
+.header-rightSide{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   padding-inline: 8px;
+}
+.ContactMe {
+   text-decoration: none;
+   color: white;
+   font-weight: bolder;
+   padding-right: 30px;
+}
+
+.sidebar {
+   height: 100%;
+   width: 0;
+   position: fixed;
+   overflow-x: hidden;
+   background-color:#191229;
+   z-index: 4;
+   top: 0;
+   left: 0;
+   transition: 0.5s ;
+   margin-top: 64px; 
+
+}
+
+.sidebar div {
+   display: flex;
+   flex-direction: column;
+   background-color:#191229;
+   margin-left: 8px;
+
+}
+.sidebar div:hover {
+   background-color: rgba(255,255,255, 0.1);
+}  
+
+.sidebar a {
+   text-decoration: none;
+   color: white;
+   font-weight: bolder;
+   font-size: 20px;
+   padding-left: 16px;
+   margin-block: 16px;
+   font-weight: bolder;
+   font-family: Rubik;
+   transition: 0.5s;
+}
+
+.sidebar a:hover {
+   transform: scale(1.05);
+   border-left: 4px solid white;
+   padding-left: 12px;
+   
+}
+
+
+.contactSidebar {
+   margin-top: 48px;
+   height: 0;
+   width: 200px;
+   position: fixed;
+   top: 0;
+   right: 0;
+   z-index: 4;
+   background-color: #191229;
+   overflow-x: hidden;
+   transition: 0.5s;
+}
+
+.contactSidebar a {
+   display: block;
+   margin-inline: 16px;
+   margin-block: 32px;
+   text-decoration: none;
+   color: white;
+   font-weight: bolder;
+   font-family: Raleway;
+}
+
+main {
+   padding-top: 96px;
+   padding-inline: 32px;
+   transition: 0.5s;
+   
+}
+main p {
+   color: white;
+   padding-inline: 20px;
+   font-weight:normal; 
+   font-family: Rubik;
+   text-align: center;
+}
+.main-div-myPhotoProfile {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-inline: 200px;
+   margin-block: 25px;
+   background-color: #1C1C1C;
+   border-radius: 100px;
+   
+   
+}
+.main-myPhotoProfile {
+   width: 156px;
+   height: 156px;;
+   object-fit: cover;
+   border-radius: 312px;
+   margin-block: 64px;
+}
+
+.main-p-introduction {
+   margin-bottom: 64px;
+   margin-inline: 64px;
+   font-size: large;
+}
+ul {
+   font-family: Rubik;
+   color: white;
+   font-weight: bolder;
+   margin-bottom: 64px;
+   text-align: center;
+}
+
+ul li {
+   text-align: justify;
+   font-weight: normal;
+   font-size: large;
+}
+
+.main-div-ProgrammingLanguage {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   width: 400px;
+   margin-bottom: 64px;
+}
+
+.main-div-ProgrammingLanguage img {
+   width: 32px;
+   height: 32px;
+}
+
+.main-div-ProgrammingLanguage .javascriptIcon {
+   height: 42px;
+   width: 40px;
+   object-fit: cover;
+}
+
+.main-div-socialMedia {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   width: 400px;
+   margin-bottom: 64px
+}
+
+.main-div-socialMedia img {
+   width: 32px;
+   height: 32px;
+}
+
+.main-div-socialMedia .instagram-logo {
+   width: 70px;
+   height: 70px;
+   object-fit: cover;
+}
+
+@media (max-width: 768px) {
+   header {
+       flex-direction: row;
+   }
+
+   .header-menu {
+       height: 40px;
+   }
+
+   .header-logo {
+       height: 40px;
+   }
+
+   .ContactMe {
+       padding-right: 10px;
+   }
+
+   .sidebar {
+       width: 100%;
+       height: auto;
+       position: relative;
+       margin-top: 0;
+   }
+
+   .contactSidebar {
+       width: 100%;
+       height: auto;
+       position: relative;
+   }
+
+   main {
+       padding: 16px;
+       padding-top: 64px;
+   }
+
+   .main-div-myPhotoProfile {
+       margin: 10px;
+       border-radius: 50px;
+   }
+   .main-currentEducation {
+      padding-inline: 32px;
+   }
+   .main-currentEducation li {
+      
+      text-align:center;
+   }
+   .main-programmingLanguage {
+      padding-inline: 32px;
+      text-align: center;
+   }
+   .main-div-ProgrammingLanguage,
+   .main-div-socialMedia {
+       flex-direction: row;
+       width: 50%;
+       padding-inline: 32px;
+   }
+
+   .main-div-ProgrammingLanguage img,
+   .main-div-socialMedia img {
+       width: 28px;
+       height: 28px;
+   }
+
+   .instagram-logo {
+       width: 50px;
+       height: 50px;
+   }
+}
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+   .main-div-myPhotoProfile {
+       margin-inline: 100px;
+   }
+
+   .main-div-ProgrammingLanguage,
+   .main-div-socialMedia {
+       width: 300px;
+       padding-inline: 100px;
+
+   }
+
+   .main-div-ProgrammingLanguage img,
+   .main-div-socialMedia img {
+       width: 28px;
+       height: 28px;
+   }
+
+   .instagram-logo {
+       width: 60px;
+       height: 60px;
+   }
+}
